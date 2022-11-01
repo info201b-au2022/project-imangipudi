@@ -1,4 +1,4 @@
-# Title of your Project: Project Proposal 
+# Suicide Rates: Project Proposal 
 
 **TODO**: Edit this file. Your project proposal goes here.
 
