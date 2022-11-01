@@ -1,9 +1,13 @@
 # Suicide Rates: Project Proposal 
 
 ## Code Name: 
-## Authors: Cammi Pham (cammip@uw.edu), Ira Mangipudi (m1ra@uw.edu), Ayaan Ali Rahim (arahim@uw.edu), and Diana Almanza(dalman@uw.edu)
-## Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
-## Date: Autumn 2022
+
+## Authors: 
+Cammi Pham (cammip@uw.edu), Ira Mangipudi (m1ra@uw.edu), Ayaan Ali Rahim (arahim@uw.edu), and Diana Almanza(dalman@uw.edu)
+## Affiliation: 
+INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
+## Date: 
+Autumn 2022
 
 ## Abstract
 Our main question is, how should mental health and suicide be evaluated? This question is important because to further understand mental health and suicide, we must examine possible conditions that might negatively affect the two topics. To address the question, we will investigate the correlation between different personal qualities and suicide rates. We are concerned with mental health and suicide, because it is something that could affect all of our family, friends, and peers. To address this concern, we plan to use the information we find to create a project deliverable that shows which qualities we should focus on while evaluating mental health and suicide.  
@@ -49,10 +53,14 @@ The person who created this data set is named Twinkle Khanna. Twinkle Khanna is 
 | Human Resources.csv                 | Shows the resource rate              | 110          | 6         |
 
 ### Citations:
-Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates 
-Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Crude+suicide+rates.csv 
-Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Facilities.csv 
-Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Human+Resources.csv 
+Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates  
+
+Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Crude+suicide+rates.csv  
+
+Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Facilities.csv  
+
+Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Human+Resources.csv  
+
 
 ## Expected Implications:
 An expected implication in our data set is that depending on where a person is born and grows up might have an influence and a connection to the suicide rates. In certain countries there suicide rate is very high and it is important to look into it and think about the policies that might be put in place that may cause suicide to be a lot more common in certain places. This implication is important in helping us take into account many of the factors and research further on mental health to be able to understand the environments that might cause these rates. A second expected implication is that suicide is more common with males than females. This implication that there is a difference between suicide rates because of gender is important in looking at what might cause this. It helps us think about big parties that might have an effect and we can research further about policies put at pace and the policymakers.There is a key difference between genders as well as a difference in rates looking at the environment they grew up in more specifically the country.
@@ -63,8 +71,11 @@ Limitations in the data set include that the data only considers suicides from 2
 ## References: 
 Mental Health Information. (2022). _National Institute of Mental Health._ https://www.nimh.nih.gov/health/statistics/suicide 
 Khanna, T. (2020). _Mental Health and Suicide Rates (Age-standardized suicide rates)_ [Data set]. Kaggle. https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates
+
 Khanna, T. (2020). _Mental Health and Suicide Rates (Crude suicide rates)_ [Data set]. Kaggle. https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Crude+suicide+rates.csv 
+
 Khanna, T. (2020). _Mental Health and Suicide Rates (Facilities)_ [Data set]. Kaggle. https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Facilities.csv 
+
 Khanna, T. (2020). _Mental Health and Suicide Rates (Human Resources)_ [Data set]. Kaggle. https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Human+Resources.csv 
 
 
