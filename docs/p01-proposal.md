@@ -3,7 +3,7 @@
 ## Code Name: 
 
 ## Authors: 
-Cammi Pham (cammip@uw.edu), Ira Mangipudi (m1ra@uw.edu), Ayaan Ali Rahim (arahim@uw.edu), and Diana Almanza(dalman@uw.edu)
+Cammi Pham (cammip@uw.edu), Ira Mangipudi (m1ra@uw.edu), Ayaan Ali Rahim (arahim@uw.edu), and Diana Almanza (dalman@uw.edu)
 ## Affiliation: 
 INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
 ## Date: 
@@ -52,6 +52,7 @@ The person who created this data set is named Twinkle Khanna. Twinkle Khanna is 
 | Facilities.csv                      | Displays mental health facility data | 112          | 7         |
 | Human Resources.csv                 | Shows the resource rate              | 110          | 6         |
 
+
 ### Citations:
 Khanna, T. (2020). https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates  
 
@@ -70,6 +71,7 @@ Limitations in the data set include that the data only considers suicides from 2
 
 ## References: 
 Mental Health Information. (2022). _National Institute of Mental Health._ https://www.nimh.nih.gov/health/statistics/suicide 
+
 Khanna, T. (2020). _Mental Health and Suicide Rates (Age-standardized suicide rates)_ [Data set]. Kaggle. https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates
 
 Khanna, T. (2020). _Mental Health and Suicide Rates (Crude suicide rates)_ [Data set]. Kaggle. https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates?select=Crude+suicide+rates.csv 
