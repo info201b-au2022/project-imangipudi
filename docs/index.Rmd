@@ -1,7 +1,7 @@
 ---
-title: "Your Project Title"
-author: "project team members"
-date: "1/22/2022"
+title: "Your Project Name "
+author: "Cammi Pham, Diana Almanza Almonte, Ayaan Ali Rahim, Ira Mangipudi"
+date: "11/9/2022"
 output: html_document
 ---
 
