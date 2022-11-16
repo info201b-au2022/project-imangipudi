@@ -4,19 +4,26 @@ author: "Cammi Pham, Diana Almanza Almonte, Ayaan Ali Rahim, Ira Mangipudi"
 date: "11/9/2022"
 output: html_document
 ---
-
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+source('./P2_table_of_average_rates.R')
+library(knitr)
 ```
 
+```{r most_rates, echo = FALSE}
+kable(most_rates, col.names = c("Country", "Average Suicide Rate (2010-2019)")) %>% 
+  kable_styling(bootstrap_options = "striped")
+```
 ## What is this file for?
 
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
+-   This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis. 
+**`most_rates`** This is a table of the top twenty highest suicide rates
 
-* Please see Canvas for more details.
+-   Please see Canvas for more details.
 
 ## ACCESSING THE /source DIRECTORY
+
 ### Example 1: Source some code and run a function
+
 ```{r}
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
@@ -26,14 +33,15 @@ data_access_test()
 ```
 
 ### Example 2: Initialize a variable and then use it
+
 ```{r}
 # Example 1: This function was "sourced" above
 msg <- data_access_test(" Morgan!")
 ```
 
-> `r msg` Hope you have a good day!! 
+> `r msg` Hope you have a good day!!
 
-## ABOUT THIS FILE: 
+## ABOUT THIS FILE:
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 

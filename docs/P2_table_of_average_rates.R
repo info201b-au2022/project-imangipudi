@@ -23,8 +23,6 @@ crude_rates2 <- select(new_crude_rates, -c(X2019, X2018, X2017, X2016, X2015, X2
                                            X2013, X2012, X2011, X2010, X2009, X2008,
                                            X2007, X2006, X2005, X2004, X2003, X2002,
                                            X2001, X2000))
-crude_rates2 <- group_by(crude_rates2, Country)
-crude_rates2 <- filter(crude_rates2, Sex == "Both sexes")
 crude_rates2$x2019 <- as.numeric(crude_rates2$x2019)
 crude_rates2$x2018 <- as.numeric(crude_rates2$x2018)
 crude_rates2$x2017 <- as.numeric(crude_rates2$x2017)
@@ -36,6 +34,15 @@ crude_rates2$x2012 <- as.numeric(crude_rates2$x2012)
 crude_rates2$x2011 <- as.numeric(crude_rates2$x2011)
 crude_rates2$x2010 <- as.numeric(crude_rates2$x2010)
 crude_rates2 <- mutate(crude_rates2, average = rowMeans(subset(crude_rates2, select = c(x2019, x2018, x2017, x2016, x2015, x2014, x2013, x2012, x2011, x2010))))
-crude_rates2 <- arrange(crude_rates2, -average)
-crude_rates2 <- select(crude_rates2, Country, average)
-crude_rates2 <- slice(crude_rates2, 1:10)
+crude_rates2 <- filter(crude_rates2, Sex == "Both sexes")
+install.packages("kableExtra")
+library(kableExtra)
+library(knitr)
+
+most_rates <- crude_rates2 %>% 
+  group_by(Country) %>% 
+  summarize(Frequency = average) %>% 
+  top_n(20) %>% 
+  arrange(desc(Frequency))
+
+
