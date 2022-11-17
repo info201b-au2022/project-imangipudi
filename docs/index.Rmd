@@ -4,6 +4,13 @@ author: "Cammi Pham, Diana Almanza Almonte, Ayaan Ali Rahim, Ira Mangipudi"
 date: "11/9/2022"
 output: html_document
 ---
+# Suicide Rates
+
+Code name: Shrek
+Authors: Cammi Pham (cammip@uw.edu), Ira Mangipudi (m1ra@uw.edu), Ayaan Ali Rahim (arahim@uw.edu), Diana Almanza(dalman@uw.edu)
+Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington
+Date: Autumn 2022
+
 
 ## Abstract 
 
