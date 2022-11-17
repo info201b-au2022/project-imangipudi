@@ -28,12 +28,12 @@ This chart shows us the age ranges in which there is the highest amounts of suic
 ```{r average_suicide_rates_per_year, echo = FALSE}
 plot(average_suicide_rates_per_year)
 ```
-
 This chart is used to show how the suicide rates have progressed over the years, ranging from 2000 to 2019. To do so the suicide rates from all the countries were averaged out to create a global suicide rate.The suicide rates typically have a declining rate as the years progress. The highest rate was in 2000, with an average of 13.2306. While 2019 has the lowest global rate of 10.08689.
 
 ```{r map1, echo = FALSE}
 plot(map1)
 ```
+The purpose of this chart is to show the difference in suicide rates in each country. We included this chart because it helps answer one of our research questions: “Which countries have the highest suicide rates compared to other countries?” Analyzing this visualization, can lead and give us ideas for discovering new factors that contribute to suicide rates. By looking at the chart, we can see that Lesotho in Africa has the highest suicide rate. 
 
 ## What is this file for?
 
