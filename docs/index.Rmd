@@ -4,7 +4,9 @@ author: "Cammi Pham, Diana Almanza Almonte, Ayaan Ali Rahim, Ira Mangipudi"
 date: "11/9/2022"
 output: html_document
 ---
+
 library(dyplr)
+
 ```{r setup, include=FALSE}
 source('../source/P2_table_of_average_rates.R')
 source("../source/P2_chart.R")
@@ -17,17 +19,22 @@ library(knitr)
 kable(most_rates, col.names = c("Country", "Average Suicide Rate (2010-2019)")) %>% 
   kable_styling(bootstrap_options = "striped")
 ```
+
 ```{r age_group_suicide_rates, echo = FALSE}
 plot(age_group_suicide_rates)
 ```
+This chart shows us the age ranges in which there is the highest amounts of suicide. As the age range increases the suicide rate also goes up. With this information and data chart we can answer our research question of which age group has the largest amount of suicide. People in the age range of over 85 years old have a higher suicide rate than the other age groups. 
+
 ```{r average_suicide_rates_per_year, echo = FALSE}
 plot(average_suicide_rates_per_year)
 ```
-#This chart is used to show how the suicide rates have progressed over the years, ranging from 2000 to 2019. To do so the suicide rates from all the countries were averaged out to create a global suicide rate.The suicide rates typically have a declining rate as the years progress. The highest rate was in 2000, with an average of 13.2306. While 2019 has the lowest global rate of 10.08689. 
+
+This chart is used to show how the suicide rates have progressed over the years, ranging from 2000 to 2019. To do so the suicide rates from all the countries were averaged out to create a global suicide rate.The suicide rates typically have a declining rate as the years progress. The highest rate was in 2000, with an average of 13.2306. While 2019 has the lowest global rate of 10.08689.
 
 ```{r map1, echo = FALSE}
 plot(map1)
 ```
+
 ## What is this file for?
 
 -   This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
