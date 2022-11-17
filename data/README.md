@@ -2,7 +2,7 @@
 
 In our project, we use the following data files and Application Programming Interfaces:
 
-## Data files (TODO: Update/delete for your PROJECT)
+## Data files 
 |Data File Name | Brief Description|
 |---------------| -----------------|
 |[age_data_headers.csv](./age_data_headers.csv) | This file contains data on rates of suicide per age group. (See report for details.)
