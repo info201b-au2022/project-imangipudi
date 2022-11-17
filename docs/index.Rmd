@@ -5,7 +5,70 @@ date: "11/9/2022"
 output: html_document
 ---
 
-library(dyplr)
+## Abstract 
+
+Our main question is, how should mental health and suicide be evaluated? This question is important because to further understand mental health and suicide, we must examine possible conditions that might negatively affect the two topics. To address the question, we will investigate the correlation between different personal qualities and suicide rates. We are concerned with mental health and suicide because it is something that could affect all of our family, friends, and peers. To address this concern, we plan to use the information we find to create a project deliverable that shows which qualities we should focus on while evaluating mental health and suicide.  
+
+## Keywords
+
+Global mental health, age, suicide rate, and gender
+
+## Introduction 
+
+Approximately 800,000 people globally die from suicide each year, suicide continues to be the second leading cause of death in youth and is the top 3 leading causes of death globally. In addition to the 800,000 people who die from suicide each year 20x more attempt suicide. An estimated 1.3% of the global population dies from suicide each year, raising an alarming amount of concern. Our issue is important because so much of the population die from suicide each year and these people could be those who we share relationships with, so it’s important that we know the leading causes.Our study of the data set will serve to further our understanding of how the environment, gender, age, and other circumstances influence mental health and suicide rates in different countries and years. Our main question is how should mental health and suicide be evaluated? We will examine this by looking into the association between suicide rates and different characteristics. 
+
+## Problem Domain
+
+Project framing:
+The domain of this problem extends to all human beings. We are addressing questions on mental health by examining the relationship between suicide rates and factors such as age, country of residence, time of suicide and possible events during this time, and gender. Because of the vast categories being observed, the domain extends to various industries, whether it be political, economic, or social. The essential issue we are addressing is suicides caused by poor mental health, and how to mitigate this.
+
+Human values:
+The primary value present here is the value of human life. Suicides occur due to factors that decrease one’s perception of the value of their life, and this should not be an issue that anyone should experience. Within this data, the value of one’s life and the tragic suicides that have occurred due to factors that we will explore are handled carefully.
+
+Direct and indirect stakeholders:
+The direct stakeholders of this topic are those within the health sector as well as those responsible for any events within a specific time period which may have led to a rise in suicides. These people are affected directly since we are looking for possible reasons behind suicides, and if we need to address the issue of poor mental health we must look at what is causing it and who can be responsible for mitigating these rates. The indirect stakeholders are people who have some level of effect on this dataset. Since the data compare factors such as gender, age, and country of residence, which are factors that everyone has, it brings in the human population as a whole when viewing those who are indirectly affected by the data and its results.
+
+Possible harms and benefits:
+The main benefit of using this data is to mitigate the reasons behind suicides and decrease the rate of suicides globally. This could be done by first labeling these possible causes and then discovering ways to prevent these causes. Within this process, certain direct stakeholders, such as those who work in the health sector, can be slightly harmed as there may be a need for change within the operations of this sector. Also, one possible harm is that of mislabeling a factor as one that has caused suicides. We have to be careful in examining the data and forming correlations, as mislabeling can lead to the spread of false information and thus work against the purpose of mitigating suicide rates.
+
+## Research Questions
+
+* Which countries have the highest suicide rates compared to other countries?
+This question is important because it helps us look at the different environments where suicide is most common. It connects to the problem domain of addressing mental health and looking at the connections between suicide rates and all the other factors.
+
+* Which age group has the highest suicide rate?
+Looking into this question allows us to focus specifically on the age groups and this helps us research why certain age groups have larger amounts of suicide. There are certain environments and hardships that cause people to go through a lot of mentally challenging difficulties at each age group that can have an effect on their suicide rates. It is important for us to research each age group and recognize the factors and policies that might be a place for those groups. 
+
+* What year had the largest amount of suicides and what were some possible events that could have influenced that (if any)?
+This question is very important to our report because it helps us visualize each year and see if the rates of suicide increased or decreased. Learning about the rates in each year and the events that may have influenced this change is important information to know for us to be able to address the problem.
+
+## The Dataset
+
+The data sets we selected are called “Suicide Rates by Country”, “Suicide Rates by Country and 10-year Age Groups”, and “Human Resources”. Our data sets relate to our problem domain and research questions because it revolves around suicide rates in each country. 
+It will help us answer our research questions by providing us insight into the suicide rates of each country, gender, age range, and more. In addition, to answer our research questions, we will be using the files from this data set to create data visualizations. Observations included in the data set are country, sex, year, age range, and human resources. 
+
+The organization that collected the data sets is called the World Health Organization. The World Health Organization collected this data as a part of its goal to strengthen “country health information systems, making data available as a public good, delivering a measurable impact and using data to drive public health policy” (WHO, 2022). One main source of funding for the World Health Organization is the donations they receive and fees they receive from members (Countries). People who would benefit from these data sets are people who analyze the data and make observations from them. Organizations that would benefit from this data set are health or mental health organizations. We obtained this data from a link under the project brief. 
+
+## Expected Limitations
+
+An expected implication in our data set is that depending on where a person is born and grows up might have an influence and a connection to the suicide rates. In certain countries, their suicide rate is very high and it is important to look into it and think about the policies that might be put in place that may cause suicide to be a lot more common in certain places. This implication is important in helping us take into account many of the factors and research further on mental health to be able to understand the environments that might cause these rates. A second expected implication is that suicide is more common in males than females. The implication is that there is a difference between suicide rates because gender is important in looking at what might cause this. It helps us think about big parties that might have an effect and we can research further about policies put in place and the policymakers. There is a key difference between genders as well as a difference in rates looking at the environment they grew up in more specifically the country.
+
+## Limitations
+
+Limitations in the data set include that the data only considers suicide rates from 2000 to 2019. Since the data isn’t up to date there’s a possibility that there could have been an increase or decrease in suicide rates in specific countries or even globally. This signifies that the information that is represented in the data then might not exhibit an accurate representation of the demographic in the present time. Another limitation that is present in the data set is that the data is measured with an inconsistent incremental increase of years, starting in 2000 and going to 2010, 2015, and 2016.  The inconsistent increase in the years where the suicides were measured in these countries doesn’t account for particular historic events that could have occurred in that time period in these countries. The circumstances that could influence the country could be famine, economic instability, climate inconsistency (agricultural issues), wars, etc. These events could result in anomalies in certain countries and in certain years.
+
+## References
+
+National Institute of Mental Health. (2022). https://www.nimh.nih.gov/health/statistics/suicide 
+
+
+World Health Organization (2021). https://apps.who.int/gho/data/node.main.MHSUICIDEASDR?lang=en 
+
+
+World Health Organization (2021). https://apps.who.int/gho/data/node.main.MHSUICIDE10YEARAGEGROUPS?lang=en 
+
+
+World Health Organization (2021). https://apps.who.int/gho/data/node.main.MHHR?lang=en 
 
 ```{r setup, include=FALSE}
 source('../source/P2_table_of_average_rates.R')
