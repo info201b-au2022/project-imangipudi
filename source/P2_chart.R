@@ -17,9 +17,12 @@ View(age_crudedata)
 
 #ggplot(datas, aes(x = age, y = avg_age_rate))+
 #geom_count(aes(colour= green))
-       
+datas <- data.frame(
+  age = c("xover_85", "x75_84","x65_74","x55_64","x45_54","x35_44","x25_34","15_24"),
+  avg_age_rate = c(69.39253, 29.81421, 21.82769, 17.93862, 15.57505, 12.92222, 10.74372,7.725683)
+)       
 
-ggplot(datas, aes(x=age, y=avg_age_rate))+
+age_group_suicide_rates <- ggplot(datas, aes(x=age, y=avg_age_rate))+
   geom_point(aes(size=avg_age_rate))
 
 
@@ -43,10 +46,7 @@ new_dataframe <- summarize(
 View(new_dataframe)
 
 
-datas <- data.frame(
-  age = c("xover_85", "x75_84","x65_74","x55_64","x45_54","x35_44","x25_34","15_24"),
-  avg_age_rate = c(69.39253, 29.81421, 21.82769, 17.93862, 15.57505, 12.92222, 10.74372,7.725683)
-)
+
 View(datas)
 
 
