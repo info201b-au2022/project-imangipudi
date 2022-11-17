@@ -8,7 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 source('../source/P2_table_of_average_rates.R')
 source("../source/P2_chart.R")
-source("../source/avg_year_crude_bar_graph")
+source("../source/avg_year_crude_bar_graph.R")
 source("../source/countries-map.R")
 library(knitr)
 ```
