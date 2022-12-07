@@ -23,6 +23,8 @@ new_map <- function(country, sex) {
 #Interactive page 2
 
 
+
+
 #Interactive page 3
 datas <- data.frame(
   age = c("xover85", "x75-84","x65-74","x55-64","x45-54","x35-44","x25-34","x15-24"),
