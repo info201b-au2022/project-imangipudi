@@ -85,5 +85,7 @@ View(data)
 average_suicide_rates_per_year <- ggplot(data, aes(x= years, y = avg_crude_rates, fill =x)) +
   geom_bar(stat = "identity", fill = "pink")
 
+average_suicide_rates_per_year
+
   
  
