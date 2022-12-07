@@ -5,7 +5,15 @@ ui <- fluidPage(
       title = "Introduction"
     ),
     tabPanel(
-      title = "Interactive 1"
+      title = "Interactive 1",
+      
+      selectInput(inputId = "country", label = "Select a Country", 
+                  choices = countries_list), 
+      
+      selectInput(inputId = "sex", label = "Select a Sex", 
+                  choices = sexes),
+      
+      plotOutput("map")
     ),
     tabPanel(
       title = "Interactive 2"
