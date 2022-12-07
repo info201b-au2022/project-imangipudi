@@ -26,6 +26,7 @@ map_data <- function(country, sex) {
 #Interactive page 3
 
 
+#server
 server <- function(input, output) {
   
   #render map plot
