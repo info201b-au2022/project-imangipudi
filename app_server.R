@@ -12,7 +12,7 @@ sexes <- unique(crude_rates$Sex)
 world <- map_data("world")
 world <- rename(world, Country = region)
 
-map_data <- function(country, sex) {
+new_map <- function(country, sex) {
   map_df <- crude_rates %>%
   select(Country, Sex, x2019, x2018, x2017, x2016) %>%
   filter(Country == country,
@@ -32,7 +32,7 @@ server <- function(input, output) {
   #render map plot
   output$map <- renderPlot({
     title = "123"
-    map <- ggplot(map_data(input$country, input$sex)) + 
+    map <- ggplot(new_map(input$country, input$sex)) + 
       geom_polygon(aes(x = long, y = lat, group = group, fill = x2019)) +
       labs(caption = "hi")
     map

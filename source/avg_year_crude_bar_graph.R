@@ -9,7 +9,6 @@ crude_rates <- read.csv(
   file = "https://raw.githubusercontent.com/info201b-au2022/project-imangipudi/main/data/crude_rates.csv",
   stringsAsFactors = FALSE
   )
-View(crude_rates)
 
 get_rates <- function(year){
   new <- str_replace_all(year, " \\s*\\[[^\\)]+\\]", "")
