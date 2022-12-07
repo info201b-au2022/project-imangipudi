@@ -23,6 +23,8 @@ new_map <- function(country, sex) {
 #Interactive page 2
 
 
+
+
 #Interactive page 3
 
 
