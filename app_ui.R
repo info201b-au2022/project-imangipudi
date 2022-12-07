@@ -17,6 +17,8 @@ ui <- fluidPage(
     ),
     tabPanel(
       title = "Interactive 2"
+      
+      
     ),
     tabPanel(
       title = "Interactive 3"
