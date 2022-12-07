@@ -19,7 +19,13 @@ ui <- fluidPage(
       title = "Interactive 2"
     ),
     tabPanel(
-      title = "Interactive 3"
+      title = "Interactive 3",
+      
+      selectInput("age1", label = "Select box", 
+                  choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
+      
+      plotOutput("ages")
+                  
     ),
     tabPanel(
       title = "Summary Page"

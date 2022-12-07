@@ -24,7 +24,15 @@ new_map <- function(country, sex) {
 
 
 #Interactive page 3
+datas <- data.frame(
+  age = c("xover85", "x75-84","x65-74","x55-64","x45-54","x35-44","x25-34","x15-24"),
+  avg_age_rate = c(69.39253, 29.81421, 21.82769, 17.93862, 15.57505, 12.92222, 10.74372,7.725683))   
 
+filter_data <- function(age1) {
+  df <- datas %>%
+    filter(age == age1)
+  return(df)
+}
 
 #server
 server <- function(input, output) {
@@ -36,6 +44,13 @@ server <- function(input, output) {
       geom_polygon(aes(x = long, y = lat, group = group, fill = x2019)) +
       labs(caption = "hi")
     map
+  })
+  
+  output$ages <- renderPlot({
+    title = "Age"
+    ages <- ggplot(filter_data(input$age1), aes(x = age, y = avg_age_rate))+
+      geom_point(aes(size = 5))
+    ages
   })
   
   
