@@ -5,7 +5,7 @@ ui <- fluidPage(
       title = "Introduction",
       h1("Suicide Rates Across the World"),
       p("We have chosen to analyze suicide rates across the world. Suicide continutes to be a leading cause of death across the world, which is why we find it important to study the data reported on this issue, and learn ways we can mitigate this issue. The dataset we have used includes suicide rates per country, sex, and year dating from 2000 to 2019. We seek to address questions such as which countires have the highest suicides rates, which age groups have had the highest suicide rates, as well as whicih years have had the highest suicide rates. With these questions, we hope to find patterns which will allow us to determine ways to decrease the deaths caused by suicides."),
-      img(src = "suicide-and-suicide-behavior_thumb.jpg")
+      img("", src = "https://healthmatters.nyp.org/wp-content/uploads/2019/09/warning-signs-of-suicide-hero.jpg")
     ),
     
     tabPanel(
