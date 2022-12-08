@@ -79,7 +79,7 @@ Possible harms and benefits: The main benefit of using this data is to mitigate 
     p("The organization that collected the data sets is called the World Health Organization. The World Health Organization collected this data as a part of its goal to strengthen country health information systems, making data available as a public good, delivering a measurable impact and using data to drive public health policy (WHO, 2022). One main source of funding for the World Health Organization is the donations they receive and fees they receive from members (Countries). People who would benefit from these data sets are people who analyze the data and make observations from them. Organizations that would benefit from this data set are health or mental health organizations. We obtained this data from a link under the project brief."),
 
     h2("Findings"),
-    #Ira
+    p("Our findings show that as people who are older have a higher suicide rate than those in younger age groups. For example, the suicide rate for those aged 85 years and older was much higher than those who were 15 - 25 years of age. Additionally, our data showed that as the years progressed, the suicide rate actually declined. The year 2000 had a higher suicide rate globally than the year 2019 did."),
     
     h2("Discussion"),
     #Diana
@@ -96,3 +96,5 @@ Possible harms and benefits: The main benefit of using this data is to mitigate 
     )
     
 )))
+library(shiny)
+
