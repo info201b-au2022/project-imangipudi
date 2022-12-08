@@ -82,7 +82,7 @@ Possible harms and benefits: The main benefit of using this data is to mitigate 
     p("Our findings show that as people who are older have a higher suicide rate than those in younger age groups. For example, the suicide rate for those aged 85 years and older was much higher than those who were 15 - 25 years of age. Additionally, our data showed that as the years progressed, the suicide rate actually declined. The year 2000 had a higher suicide rate globally than the year 2019 did."),
     
     h2("Discussion"),
-    #Diana
+    p("Our data shows suicide rates from various countries around the world,allowing us to think of certain circumstances that people living in different countries face. There are some countries that have more accessibility to programs that help with mental health and immediate services that help those who are suicidal. Looking at our data visualizations we can clearly see gaps shown in each of the factors, such as how people over 85 have a much bigger suicide rate than any other age gap. It is necessary that there is aid and programs specifically for mental health all around the world."),
     
     h2("Conclusion"),
     #Ayaan
