@@ -56,13 +56,14 @@ ui <- fluidPage(
     tabPanel(
       title = "Summary Page",
       h1("Summary"), 
-      p(strong("Our data set has three main takeaways: ")), 
+      p(strong("Our data set has four main takeaways: ")), 
       
       p("1) The year 2000 has the largest suicide rate from the range 2000-2019, so as the the years progressed, the suicide rate declined"), 
       p("2) The age group from 85 years and over has the highest suicide rate, as people got older the suicide rate increased"),
-      p("3) The country with the largest suicide rate globally was Lesotho in Africa"),
+      p("3) Men have higher suicide rates than women"),
+      p("4) The country with the largest suicide rate globally was Lesotho in Africa")
       
-      img("", src = "https://www.photobox.co.uk/my/photo/full?photo_id=505127427764"),
+    
       
     ),
     tabPanel(
