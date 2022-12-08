@@ -11,8 +11,6 @@ countries_list <- unique(crude_rates$Country)
 sexes <- unique(crude_rates$Sex)
 world <- map_data("world")
 world <- rename(world, Country = region)
-<<<<<<< HEAD
-=======
 
 bar_data <- function(country) {
   crude_rates %>%
@@ -21,7 +19,6 @@ bar_data <- function(country) {
          Sex != "Both sexes")
 }
 
->>>>>>> 9cd0e8d6df60494f54442392341813e52f7d143b
 new_map <- function(country, sex) {
   map_df <- crude_rates %>%
   select(Country, Sex, x2019, x2018, x2017, x2016) %>%
