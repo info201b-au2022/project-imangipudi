@@ -30,9 +30,10 @@ datas <- data.frame(
   age = c("xover85", "x75-84","x65-74","x55-64","x45-54","x35-44","x25-34","x15-24"),
   avg_age_rate = c(69.39253, 29.81421, 21.82769, 17.93862, 15.57505, 12.92222, 10.74372,7.725683))   
 
-filter_data <- function(age1) {
+filter_data <- function(age1, age2) {
+  a <- c(age1, age2)
   df <- datas %>%
-    filter(age == age1)
+    filter(age %in% a)
   return(df)
 }
 
@@ -50,7 +51,7 @@ server <- function(input, output) {
   
   output$ages <- renderPlot({
     title = "Age"
-    ages <- ggplot(filter_data(input$age1), aes(x = age, y = avg_age_rate))+
+    ages <- ggplot(filter_data(input$age1, input$age2), aes(x = age, y = avg_age_rate))+
       geom_point(aes(size = 5))
     ages
   })
