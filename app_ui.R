@@ -30,6 +30,7 @@ ui <- fluidPage(
       
       selectInput("age1", label = "Select box", 
                   choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
+      selectInput("age2", label = "Select box", choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
       
       plotOutput("ages")
                   
