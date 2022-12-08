@@ -19,9 +19,11 @@ ui <- fluidPage(
       plotOutput("map")
     ),
     tabPanel(
-      title = "Interactive 2"
+      title = "Interactive 2",
       
-      
+      selectInput(inputId = "color", label = "Select a Color", 
+                 choices = c("pink", "blue", "red", "purple")),
+      plotOutput("bar")
     ),
     tabPanel(
       title = "Interactive 3",
