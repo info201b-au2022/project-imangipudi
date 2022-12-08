@@ -28,7 +28,10 @@ ui <- fluidPage(
       
       selectInput(inputId = "color", label = "Select a Color", 
                  choices = c("pink", "blue", "red", "purple")),
-      plotOutput("bar")
+      plotOutput("bar"),
+      
+      p("This chart is used to show how the suicide rates have progressed over the years, ranging from 2000 to 2019. To do so the suicide rates from all the countries were averaged out to create a global suicide rate. The suicide rates typically have a declining pattern as the years progress. The highest rate was in 2000, with an average of 13.2306. While 2019 has the lowest global rate of 10.08689.")
+      
     ),
     
     
@@ -40,6 +43,8 @@ ui <- fluidPage(
       selectInput("age2", label = "Select box", choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
       
       plotOutput("ages")
+      
+      
                   
     ),
     tabPanel(
