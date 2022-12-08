@@ -15,6 +15,7 @@ ui <- fluidPage(
       selectInput(inputId = "country1", label = "Select a Country", 
                   choices = countries_list),
       plotOutput("barchart"),
+      p("This chart is used to show the difference in suicide rates across the sexes of each country. For the majority of countries, males had the highest suicide rates. By exploring the data through the interactive visualization, you can see that some countries have a greater difference in suicide rates between sexes, but in almost all countries, the male suicide rates are higher than the female suicide rate."),
       
       h2("Map of Suicide Rates by Country"),
       selectInput(inputId = "country", label = "Select a Country", 
@@ -22,7 +23,7 @@ ui <- fluidPage(
       selectInput(inputId = "sex", label = "Select a Sex", 
                   choices = sexes),  
       plotOutput("map"),
-      p("This interactive chart allows you to select a country and sex and displays the suicide rate for that country.")
+      p("This interactive chart allows you to select a country and sex and displays the suicide rate for that country. Viewers can use the widgets to switch countries and the rates associated with both sexes, male, or female.")
     ),
     
     
