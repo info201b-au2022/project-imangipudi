@@ -7,16 +7,22 @@ ui <- fluidPage(
       p("We have chosen to analyze suicide rates across the world. Suicide continutes to be a leading cause of death across the world, which is why we find it important to study the data reported on this issue, and learn ways we can mitigate this issue. The dataset we have used includes suicide rates per country, sex, and year dating from 2000 to 2019. We seek to address questions such as which countires have the highest suicides rates, which age groups have had the highest suicide rates, as well as whicih years have had the highest suicide rates. With these questions, we hope to find patterns which will allow us to determine ways to decrease the deaths caused by suicides."),
       img(src = "suicide-and-suicide-behavior_thumb.jpg")
     ),
+    
     tabPanel(
       title = "Interactive 1",
       
+      h2("Suicide Rate Comparison by Gender"),
+      selectInput(inputId = "country1", label = "Select a Country", 
+                  choices = countries_list),
+      plotOutput("barchart"),
+      
+      h2("Map of Suicide Rates by Country"),
       selectInput(inputId = "country", label = "Select a Country", 
-                  choices = countries_list), 
-      
+                  choices = countries_list),   
       selectInput(inputId = "sex", label = "Select a Sex", 
-                  choices = sexes),
-      
-      plotOutput("map")
+                  choices = sexes),  
+      plotOutput("map"),
+      p("This interactive chart allows you to select a country and sex and displays the suicide rate for that country.")
     ),
     
     
