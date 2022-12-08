@@ -61,7 +61,7 @@ server <- function(input, output) {
   })
   
   output$bar <- renderPlot ({
-    title = "Average Rates Per Year"
+    title = "Average Suicide Rates Per Year"
     bar <- ggplot(filter_df(input$year1), aes(x = years, y = avg_crude_rates, fill = avg_crude_rates)) +
       geom_bar(stat = "identity", fill = input$color)
     bar
