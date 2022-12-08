@@ -42,9 +42,9 @@ ui <- fluidPage(
                   choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
       selectInput("age2", label = "Select box", choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
       
-      plotOutput("ages")
+      plotOutput("ages"),
       
-      
+      p("This visualization shows the suicide rates for different age ranges, with the option to select and view two different age groups at the same time you can compare the rates between multiple age ranges. Using the two options we can see that there is a clear gap between over 85 and any other age range.")
                   
     ),
     tabPanel(
