@@ -21,6 +21,9 @@ ui <- fluidPage(
     tabPanel(
       title = "Interactive 2",
       
+      sliderInput("year1", label = "Year range", min = 2001, 
+                  max = 2019, value = 2019),
+      
       selectInput(inputId = "color", label = "Select a Color", 
                  choices = c("pink", "blue", "red", "purple")),
       plotOutput("bar")

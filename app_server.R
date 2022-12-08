@@ -22,9 +22,12 @@ new_map <- function(country, sex) {
 
 #Interactive page 2
 bar_df <- data.frame(years = c("2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000"),
-                     avg_crude_rates = c(10.08689, 10.24699, 10.43388, 10.68197, 10.98852, 11.22579, 11.41694, 11.62678, 11.6847, 11.87541, 12.08306, 12.06831, 12.01803, 12.16284, 12.37596, 12.41913, 12.58743, 12.79454, 12.94481, 13.2306)
-)
+                     avg_crude_rates = c(10.08689, 10.24699, 10.43388, 10.68197, 10.98852, 11.22579, 11.41694, 11.62678, 11.6847, 11.87541, 12.08306, 12.06831, 12.01803, 12.16284, 12.37596, 12.41913, 12.58743, 12.79454, 12.94481, 13.2306))
 
+filter_df <- function(year1, year2) {
+  bar_df %>%
+  filter(years < year1)
+}
 
 #Interactive page 3
 datas <- data.frame(
@@ -59,7 +62,7 @@ server <- function(input, output) {
   
   output$bar <- renderPlot ({
     title = "Average Rates Per Year"
-    bar <- ggplot(bar_df, aes(x = years, y = avg_crude_rates, fill = avg_crude_rates)) +
+    bar <- ggplot(filter_df(input$year1), aes(x = years, y = avg_crude_rates, fill = avg_crude_rates)) +
       geom_bar(stat = "identity", fill = input$color)
     bar
   })
