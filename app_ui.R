@@ -7,16 +7,22 @@ ui <- fluidPage(
       p("We have chosen to analyze suicide rates across the world. Suicide continutes to be a leading cause of death across the world, which is why we find it important to study the data reported on this issue, and learn ways we can mitigate this issue. The dataset we have used includes suicide rates per country, sex, and year dating from 2000 to 2019. We seek to address questions such as which countires have the highest suicides rates, which age groups have had the highest suicide rates, as well as whicih years have had the highest suicide rates. With these questions, we hope to find patterns which will allow us to determine ways to decrease the deaths caused by suicides."),
       img(src = "suicide-and-suicide-behavior_thumb.jpg")
     ),
+    
     tabPanel(
       title = "Interactive 1",
       
+      h2("Suicide Rate Comparison by Gender"),
+      selectInput(inputId = "country1", label = "Select a Country", 
+                  choices = countries_list),
+      plotOutput("barchart"),
+      
+      h2("Map of Suicide Rates by Country"),
       selectInput(inputId = "country", label = "Select a Country", 
-                  choices = countries_list), 
-      
+                  choices = countries_list),   
       selectInput(inputId = "sex", label = "Select a Sex", 
-                  choices = sexes),
-      
-      plotOutput("map")
+                  choices = sexes),  
+      plotOutput("map"),
+      p("This interactive chart allows you to select a country and sex and displays the suicide rate for that country.")
     ),
     
     
@@ -28,7 +34,10 @@ ui <- fluidPage(
       
       selectInput(inputId = "color", label = "Select a Color", 
                  choices = c("pink", "blue", "red", "purple")),
-      plotOutput("bar")
+      plotOutput("bar"),
+      
+      p("This chart is used to show how the suicide rates have progressed over the years, ranging from 2000 to 2019. To do so the suicide rates from all the countries were averaged out to create a global suicide rate. The suicide rates typically have a declining pattern as the years progress. The highest rate was in 2000, with an average of 13.2306. While 2019 has the lowest global rate of 10.08689.")
+      
     ),
     
     
@@ -39,11 +48,20 @@ ui <- fluidPage(
                   choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
       selectInput("age2", label = "Select box", choices = c("xover85", "x75-84", "x65-74", "x55-64", "x45-54", "x35-44", "x25-34", "x15-24")),
       
-      plotOutput("ages")
+      plotOutput("ages"),
+      
+      p("This visualization shows the suicide rates for different age ranges, with the option to select and view two different age groups at the same time you can compare the rates between multiple age ranges. Using the two options we can see that there is a clear gap between over 85 and any other age range.")
                   
     ),
     tabPanel(
-      title = "Summary Page"
+      title = "Summary Page",
+      h1("Summary"), 
+      p(strong("Our data set has three main takeaways: ")), 
+      
+      p("1) The year 2000 has the largest suicide rate from the range 2000-2019, so as the the years progressed, the suicide rate declined"), 
+      p("2) The age group from 85 years and over has the highest suicide rate, as people got older the suicide rate increased"),
+      p("3) The country with the largest suicide rate globally was Lesotho in Africa")
+      
     ),
     tabPanel(
       title = "Report",
