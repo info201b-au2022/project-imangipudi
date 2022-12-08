@@ -12,6 +12,13 @@ sexes <- unique(crude_rates$Sex)
 world <- map_data("world")
 world <- rename(world, Country = region)
 
+bar_data <- function(country) {
+  crude_rates %>%
+  select(Country, Sex, x2019) %>%
+  filter(Country == country,
+         Sex != "Both sexes")
+}
+
 new_map <- function(country, sex) {
   map_df <- crude_rates %>%
   select(Country, Sex, x2019, x2018, x2017, x2016) %>%
@@ -44,6 +51,13 @@ filter_data <- function(age1, age2) {
 #server
 server <- function(input, output) {
   
+  #render barchart
+  output$barchart <- renderPlot ({
+    barchart <- ggplot(bar_data(input$country1), aes(x = Sex, y = x2019)) +
+      geom_bar(stat = "identity", fill = "#336596")
+    barchart
+  })  
+  
   #render map plot
   output$map <- renderPlot({
     title = "123"
@@ -53,6 +67,7 @@ server <- function(input, output) {
     map
   })
   
+  #render chart
   output$ages <- renderPlot({
     title = "Age"
     ages <- ggplot(filter_data(input$age1, input$age2), aes(x = age, y = avg_suicide_rate))+
@@ -60,6 +75,7 @@ server <- function(input, output) {
     ages
   })
   
+  #render chart
   output$bar <- renderPlot ({
     title = "Average Suicide Rates Per Year"
     bar <- ggplot(filter_df(input$year1), aes(x = years, y = avg_crude_rates, fill = avg_crude_rates)) +
